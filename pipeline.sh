@@ -37,24 +37,24 @@ touch_dir data
 touch_dir jobs
 
 #search word and gather ids
-# ./search_jobs.sh $keywords $sample_size
-# ./dump_field.sh data $ID_PATH id 1
+./search_jobs.sh $keywords $sample_size
+./dump_field.sh data $ID_PATH id 1
 
-# #download job posts
-# ./download_jobs.sh $ID_PATH
+#download job posts
+./download_jobs.sh $ID_PATH
 
-# #extract job descriptions 
-# ./dump_field.sh jobs $JOB_PATH description 0
+#extract job descriptions 
+./dump_field.sh jobs $JOB_PATH description 0
 
-# #remove HTML tags
-# python clean_html.py $JOB_PATH $JOB_CLEANED_PATH
+#remove HTML tags
+python clean_html.py $JOB_PATH $JOB_CLEANED_PATH
 
-# #extract keywords
-# python extract_keywords.py $JOB_CLEANED_PATH > $JOB_KEYWORDS_PATH
+#extract keywords
+python extract_keywords.py $JOB_CLEANED_PATH > $JOB_KEYWORDS_PATH
 
-# #dump keywords
-# python util.py
+#dump keywords
+python util.py
 
-# #draw wordcloud
-# echo "Tag cloud saved to $output"
+#draw wordcloud
+echo "Tag cloud saved to $output"
 python tagcloud.py $output
