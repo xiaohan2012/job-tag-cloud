@@ -17,5 +17,4 @@ ids=$(<$input)
 for id in $ids; do
 	echo "Processing $id"
 	wget "https://api.linkedin.com/v1/jobs/$id:(description)?oauth2_access_token=$LINKEDIN_TOKEN" -O jobs/$id.json
-	sleep 1
 done

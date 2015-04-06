@@ -12,11 +12,13 @@ Python-written Command line tool that:
 
 ## Demo
 
-Below is the tag cloud for `natural language processing`:
+The tag cloud for `natural language processing`:
 
 ![nlp jobs](http://www.cs.helsinki.fi/u/hxiao/nlp_jobs.png)
 
-Seems that NLP jobs really values skills in Information Retrieval and Machine Learning.
+The tag cloud for `machine learning`:
+
+![nlp jobs](http://www.cs.helsinki.fi/u/hxiao/ml.png)
 
 
 ## Usage
@@ -49,7 +51,7 @@ Register for an [API key ](http://www.alchemyapi.com/api/register.html) if you d
 
 ## Note:
 1. For free Alchemy API account, there is a daily transaction limit
-2. For LinkedIn user, when crawling the job posts, requests might be forbidden.
+2. For LinkedIn user, when crawling the job posts, requests might be forbidden. When this happens, it might work to update the OAuth token as it can expire.
 
 
 ## Contributor:
